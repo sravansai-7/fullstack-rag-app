@@ -1,0 +1,6 @@
+The new Centauri-5 laptop, released in late 2024, is a powerhouse for creative professionals. It features the latest 
+Hyperion G-2 processor, which boasts a 16-core architecture. For graphics, it is equipped with a Nova-Ray 8GB GPU, 
+making it ideal for 4K video editing and 3D rendering. The base model comes with 32GB of RAM, but it is 
+user-upgradable to 64GB. One of its standout features is the 'Starlight Display', a 16-inch OLED panel with a 
+120Hz refresh rate and peak brightness of 1000 nits. The laptop's battery life is rated for 14 hours of mixed usage.
+Storage options start at a 1TB NVMe SSD.
