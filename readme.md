@@ -4,8 +4,6 @@ This project is a complete full-stack web application that implements a Retrieva
 
 It features a secure Python/Flask backend that handles the AI logic and a modern React/Vite frontend for a smooth user experience.
 
-[Image of the RAG Q&A application UI]
-
 ---
 
 ## **Features**
@@ -36,4 +34,119 @@ This application follows a two-phase RAG process:
 * **Backend**:
   * [Python](https://www.python.org/)
   * [Flask](https://flask.palletsprojects.com/)
-  * [LangChain](<https://python.langchain>.
+  * [LangChain](https://python.langchain.com/)
+  * [Google Gemini API](https://ai.google.dev/)
+  * [FAISS](https://github.com/facebookresearch/faiss) (Vector Store)
+
+---
+
+## **Project Structure**
+fullstack-rag-app/
+├── server/
+│   ├── app.py
+│   ├── my_document.txt
+│   ├── requirements.txt
+│   ├── .env
+│   └── venv/
+└── client/
+├── src/
+│   ├── App.jsx
+│   └── App.css
+├── package.json
+└── ... (other React files)
+---
+
+## **Getting Started** 🚀
+
+Follow these instructions to get the project running on your local machine.
+
+### **Prerequisites**
+
+* [Node.js](https://nodejs.org/) (v18.x or higher)
+* [Python](https://www.python.org/downloads/) (v3.9 or higher) & `pip`
+* [Git](https://git-scm.com/)
+* A Google Gemini API Key from [Google AI Studio](https://ai.google.dev/).
+
+### **Installation & Setup**
+
+1. **Clone the repository:**
+
+    ```bash
+    git clone [https://github.com/your-username/fullstack-rag-app.git](https://github.com/your-username/fullstack-rag-app.git)
+    cd fullstack-rag-app
+    ```
+
+2. **Set up the Backend Server:**
+    * Navigate into the `server` directory:
+
+        ```bash
+        cd server
+        ```
+
+    * Create and activate a Python virtual environment:
+
+        ```bash
+        # Create the virtual environment
+        python -m venv venv
+        # Activate it (Linux/macOS)
+        source venv/bin/activate
+        # Or activate it (Windows)
+        .\venv\Scripts\activate
+        ```
+
+    * Install the required Python packages:
+
+        ```bash
+        pip install -r requirements.txt
+        ```
+
+    * Create a `.env` file for your API key:
+
+        ```bash
+        touch .env
+        ```
+
+    * Add your Gemini API Key to the `.env` file:
+
+        ```
+        GOOGLE_API_KEY="your_api_key_here"
+        ```
+
+3. **Set up the Frontend Client:**
+    * Navigate from the root directory into the `client` directory:
+
+        ```bash
+        cd ../client
+        ```
+
+    * Install the required npm packages:
+
+        ```bash
+        npm install
+        ```
+
+### **Running the Application**
+
+You must run both the backend and frontend servers in **separate terminals**.
+
+1. **Terminal 1: Start the Backend Server**
+    * Make sure you are in the `server` directory with your virtual environment activated.
+    * Run the Flask application:
+
+        ```bash
+        python app.py
+        ```
+
+    * The server will start and be listening on `http://localhost:5000`. Leave this terminal running.
+
+2. **Terminal 2: Start the Frontend Client**
+    * Make sure you are in the `client` directory.
+    * Run the Vite development server:
+
+        ```bash
+        npm run dev
+        ```
+
+    * Open the URL provided (usually `http://localhost:5173`) in your web browser.
+
+You can now ask questions about the `my_document.txt` file through the web interface!
